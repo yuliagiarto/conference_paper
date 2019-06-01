@@ -1,6 +1,8 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: sig-alternate-sample.aux
 The style file: abbrv.bst
 Database file #1: sigproc.bib
-Warning--I didn't find a database entry for "deafnessAndHearingLoss"
-Warning--I didn't find a database entry for "ASLLexiconVideoDataset"
-(There were 2 warnings)
+Warning--empty booktitle in tessa
+Warning--empty journal in signlanguageanimationusingtvml
+Warning--empty booktitle in 3danimationframeworkforsignlanguage
+Warning--empty publisher in WendySandler:2006
+(There were 4 warnings)

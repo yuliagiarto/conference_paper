@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.3.31)  22 MAY 2019 13:32
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.3.31)  30 MAY 2019 14:36
 entering extended mode
 **./sig-alternate-sample.tex
 (sig-alternate-sample.tex
@@ -232,48 +232,81 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
 
 ("C:\Users\yuliagiarto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-))) (sig-alternate-sample.aux)
+)))
+("C:\Users\yuliagiarto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\capt
+ion.sty"
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+("C:\Users\yuliagiarto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\capt
+ion3.sty"
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@tempdima=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+\abovecaptionskip=\skip44
+\belowcaptionskip=\skip45
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2-> \vskip 10pt \setbox \@
+tempboxa \hbox {\textbf {#1: #2}} \ifdim \wd \@tempboxa >\hsize \textbf {#1: #2
+}\par \else \hbox to\hsize {\hfil \box \@tempboxa \hfil } \fi .
+\c@caption@flags=\count111
+\c@ContinuedFloat=\count112
+) (sig-alternate-sample.aux)
 \openout1 = `sig-alternate-sample.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Try loading font information for U+msa on input line 154.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 155.
 
 ("C:\Users\yuliagiarto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ums
 a.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 154.
+LaTeX Font Info:    Try loading font information for U+msb on input line 155.
 
 ("C:\Users\yuliagiarto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ums
 b.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 154.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 155.
 
 ("C:\Users\yuliagiarto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ulasy.f
 d"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 154.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 155.
 
 ("C:\Users\yuliagiarto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1ptm
 .fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 154.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 155.
 
 
 ("C:\Users\yuliagiarto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omspt
@@ -281,15 +314,9 @@ m.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
-
-Overfull \hbox (1.0793pt too wide) in paragraph at lines 156--165
-\T1/aer/m/it/9 Prepar-ing ACM SIG Pro-ceed-ings Us-ing L[]T[]X$\OT1/cmr/m/n/9 2
-[]$ \T1/aer/m/it/9 and BibT[]X\T1/aer/m/n/9 .
- []
-
-Excluding 'CCSXML' comment.
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 224.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 155.
+ Excluding 'CCSXML' comment.
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 233.
 
 
 ("C:\Users\yuliagiarto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ae\omsaer.fd
@@ -297,60 +324,61 @@ LaTeX Font Info:    Try loading font information for OMS+aer on input line 224.
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 224.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 233.
 
-
-LaTeX Warning: Citation `deafnessAndHearingLoss' on page \thepage  undefined on
- input line 232.
-
-
-LaTeX Warning: Citation `ASLLexiconVideoDataset' on page \thepage  undefined on
- input line 238.
-
-LaTeX Font Info:    Try loading font information for T1+aett on input line 271.
-
-("C:\Users\yuliagiarto\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ae\t1aett.fd
-"
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [1
-
-
-] [2]
-File: fly.eps Graphic file (type eps)
-<fly.eps>
-File: fly.eps Graphic file (type eps)
-<fly.eps>
-
-
-LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 460.
-
-File: flies.eps Graphic file (type eps)
-<flies.eps>
-File: rosette.eps Graphic file (type eps)
-<rosette.eps>
-\c@theorem=\count111
-\c@definition=\count112
-
-Overfull \hbox (15.60826pt too wide) detected at line 537
-\OML/cmm/m/it/9 l \OT1/cmr/m/n/9 = [] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm
-/m/it/9 x\OT1/cmr/m/n/9 ) = [] [] = [] \OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cm
-m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9 ^^A [] [] \OT1/cmr/m/n/9 = 0 \OMS/cm
-sy/m/n/9 ^^A \OML/cmm/m/it/9 L \OT1/cmr/m/n/9 = 0\OML/cmm/m/it/9 ;
+Overfull \hbox (11.90785pt too wide) in paragraph at lines 233--234
+\T1/aer/bx/n/9 olo-gies $\OMS/cmsy/m/n/9 !$ \T1/aer/bx/n/9 Mo-tion pro-cess-ing
+; Im-age pro-cess-ing; Graph-
  []
 
-(sig-alternate-sample.bbl [3]) [4] (sig-alternate-sample.aux)
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+Underfull \vbox (badness 6032) has occurred while \output is active []
 
- ) 
+ [1
+
+
+]
+Overfull \hbox (4.12862pt too wide) in paragraph at lines 258--259
+[]\T1/aer/m/n/9 American Sign Lan-guage (ASL) is a nat-u-ral lan-guage which
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: img/openpose.png Graphic file (type bmp)
+<img/openpose.png>
+ [2]
+File: img/process.png Graphic file (type bmp)
+<img/process.png>
+
+[3]
+File: img/ncorrframes.png Graphic file (type bmp)
+<img/ncorrframes.png>
+
+Underfull \vbox (badness 5345) has occurred while \output is active []
+
+File: img/crossfading.png Graphic file (type bmp)
+<img/crossfading.png>
+ [4]
+Overfull \hbox (1.32114pt too wide) in paragraph at lines 378--379
+[]\T1/aer/m/n/9 Fingertip ori-en-ta-tion vari-able also ad-justed to the re-tur
+ned
+ []
+
+File: img/success.png Graphic file (type bmp)
+<img/success.png>
+File: img/success1.png Graphic file (type bmp)
+<img/success1.png>
+File: img/failure.png Graphic file (type bmp)
+<img/failure.png>
+[5] (sig-alternate-sample.bbl) [6] (sig-alternate-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 2406 strings out of 427748
- 27408 string characters out of 3145877
- 109350 words of memory out of 3000000
- 6375 multiletter control sequences out of 15000+200000
- 49885 words of font info for 65 fonts, out of 3000000 for 9000
+ 3506 strings out of 427748
+ 47587 string characters out of 3145877
+ 135269 words of memory out of 3000000
+ 7486 multiletter control sequences out of 15000+200000
+ 47608 words of font info for 63 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 39i,10n,34p,644b,465s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,10n,92p,1515b,486s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on sig-alternate-sample.pdf (4 pages).
+Output written on sig-alternate-sample.pdf (6 pages).
