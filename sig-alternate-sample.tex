@@ -49,6 +49,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{amsmath}
+\DeclareMathOperator*{\argminA}{arg\,min}
 \begin{document}
 
 % Copyright
@@ -281,7 +282,7 @@ We use the pretrained model provided by this library to extract the skeleton of 
 \begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{img/openpose.png}
-	\caption{OpenPose Keypoints Output Format}
+	\caption{OpenPose Keypoints Output Format. Cited from GitHub source of~\cite{openpose1}~\cite{openpose2}~\cite{openpose3}~\cite{openpose4}.}
 \end{figure}
 
 \subsection{Constructing Transition Frames}
@@ -360,17 +361,19 @@ In this work, the term outliers are given to frames which can not be put in betw
 
 \begin{equation}
 \begin{aligned}
-T=\min_{f \in F}sim(f), min_x<f_x<max_x \land min_y<f_y<max_y
+f^\ast = \argminA_{f \varepsilon F} Sim(f) ,
+F=\{f|min_x<f_x<max_x  \land  \\
+min_y<f_y<max_y\}
 \end{aligned}
 \end{equation}
 
-where T means the resulting transition frame, \begin{math}f\end{math} is frame from the transition pulls \begin{math}F\end{math}, \begin{math}min_x\end{math} and \begin{math}max_x\end{math} are the minimum and the maximum \begin{math}x\end{math} location of the corresponding keypoints from the very last and very first frame of the previous and the next gloss, and so for \begin{math}min_y\end{math} and \begin{math}max_y\end{math}.
+where \begin{math}f^\ast\end{math} means the resulting transition frame, \begin{math}f\end{math} is a set of keypoints from the corresponding frame from the transition pulls \begin{math}F\end{math}, \begin{math}min_x\end{math} and \begin{math}max_x\end{math} are the minimum and the maximum \begin{math}x\end{math} location of the corresponding keypoints from the very last and very first frame of the previous and the next gloss, and so for \begin{math}min_y\end{math} and \begin{math}max_y\end{math}.
 
 \subsubsection{Animation Smoothing}
 Assume that we have arranged the transition frames in the correct order, sometimes the jitter for the motion still exist. To make it smoother, we also adopt the cross-fading technique which is used to insert one additional frames in between with pixels valued the average of the previous and the next frames. The main objectives of the cross-fading is making a fade out effect for the previous frame and fade in for the next frame. We are currently also trying to adopt image morphing to enhance the smoothness.
 
 \section{Experimental Result}
-After explaining the methods, in this section mentioned the parameters and variables we use, the success case and the failed case. We also conducted a small user study for a temporary analysis of our current work.
+After explaining the methods, in this section mentioned the parameters and variables we use. We also conducted a small user study for a temporary analysis of our current work.
 
 \subsection{Parameters}
 For our system, we choose to set n-frames to 3. So for every similarity measurement iteration, the function have to calculate the similarity between a transition frame candidate with 3 last frames from the previous gloss and 3 first frames from the next gloss.
@@ -381,7 +384,6 @@ The left division part has increasing weights: 0.6, 0.8, and 1 for the last thre
 
 The threshold is also set into a fix number by doing experiment and decreased as the iteration goes by. The more iteration we do, the more unexpected transition frames retrieved. The similarity value retrieved from one iteration to another also getting smaller because the previous and the next gloss is getting nearer since we already inserted some transition in-between. Therefore, to stop the iteration we also have to reduce the threshold to some number for each iteration and if the most similar frames similarity value is bigger than the threshold, the iteration will be stopped. 
 
-\subsection{Success Case}
 \begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{img/success.png}
@@ -398,7 +400,6 @@ Fig. 5 shows the first success case example from the experiment. As we can see i
 
 Fig. 6 shows the second success case example which produced 23 transition frames put in between the glosses. This second example shows a better result than the first one because the previous gloss on this fig. 6 performs a two-hand gesture and followed by a two-hand gesture for the next gloss. So, the transition we got seems have better continuance from frame to frame.
 
-\subsection{Failure Case}
 As we can see in Fig. 7, although it has more transitions in-between the last and first frame of the glosses, the transition is not logically and visually correct. For example the transition number 22 and 25, the signer performs a scratching body gesture which are irrelevant with the desired transition. It can be happened because of the threshold, the condition to stop the iteration is not suitable for this pair of words. The direction of the hands also cannot be mentioned as a correct path. Transition number 31 and the first frame from the next gloss have too much difference. This is happened because there is no possible similar frames of gesture that can be put in.
 
 \begin{figure}
@@ -406,6 +407,8 @@ As we can see in Fig. 7, although it has more transitions in-between the last an
 	\includegraphics[width=\linewidth]{img/failure.png}
 	\caption{Failure Case. There are 31 synthesized frames to connect two glosses.}
 \end{figure}
+
+We group the failure and success case by the final difference we can achieve. If the distance stays in a significant amount and cannot be decreased anymore, then we classify it as a failure. For the last two frames in Fig. 5 and Fig. 7 we can see the movement difference are relatively bigger than the previous frames. But, we classify Fig. 5 as a success case because although it cannot find any similar frame with the first frame for the next gloss, the difference of it with the last transition frame are smaller than in Fig. 7 and the direction or the optical flow from the previous transition frames can cover the transition movement well enough. 
 
 \subsection{User Study}
 There are five hearing people with no background of ASL knowledge who has tried to look into the result. Firstly, they were given a whole sequence of video contained the corresponding glosses. We asked them to pay more attention when the glosses we picked were shown.
